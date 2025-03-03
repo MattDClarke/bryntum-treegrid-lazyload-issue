@@ -90,6 +90,9 @@ export default function Grid() {
     }), []);
 
     const gridProps: BryntumTreeGridProps = {
+        scrollable : {
+            scrollHeight : 100000
+        },
         animateTreeNodeToggle : true,
         filterFeature         : {
             allowedOperators : ['includes'],
